@@ -1,24 +1,4 @@
-// generate a random vector of costs to be used by a gradient descent algorithm
-
 use rand::Rng;
-
-fn main() {
-    // rng is a random number generator
-    let mut rng = rand::thread_rng();
-
-    // generate a vector of 100 random costs
-    let mut costs: Vec<f64> = Vec::new();
-    for _ in 0..100 {
-        costs.push(rng.gen_range(0.0, 100.0));
-    }
-    println!("{:?}", costs);
-}
-
-// implement gradient descent to find the minimum cost from our generated vector
-
-// Path: week1/src/main.rs
-// implement gradient descent to find the minimum cost from our generated vector
-
 
 fn main() {
     // rng is a random number generator
