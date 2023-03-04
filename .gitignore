@@ -13,3 +13,4 @@ Cargo.lock
 target/
 automl/target
 magic8ball/target
+rust-lambda-handshake/target
