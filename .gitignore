@@ -14,3 +14,4 @@ target/
 automl/target
 magic8ball/target
 rust-lambda-handshake/target
+rust-azure-function/target
