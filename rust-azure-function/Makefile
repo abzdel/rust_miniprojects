@@ -3,3 +3,5 @@ install-azure-func:
 	sudo dpkg -i packages-microsoft-prod.deb
 	sudo apt-get update
 	sudo apt-get install azure-functions-core-tools-4
+
+	sudo apt install musl-tools

@@ -24,7 +24,7 @@ struct Hash {
     hash: String,
 }
 
-// /api is default route - can customize it
+// api is default route - can customize it
 // exposed endpoints should go under here
 #[post("/api/token")]
 async fn tokenize(text: web::Json<Text>) -> impl Responder {
