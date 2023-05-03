@@ -10,7 +10,14 @@ fn main() -> Result<()> {
 
     let answers = qa_model.predict(&[QaInput { question, context }], 1, 32);
 
-    println!("{:?}", answers);
+    for answer_set in answers {
+        for answer in answer_set {
+            println!("{}", answer.answer);
+            println!("Score: {:?}", answer.score);
+            println!("Start: {:?}", answer.start);
+            println!("End: {:?}", answer.end);
+        }
+    }
 
     Ok(())
 }
